@@ -49,7 +49,7 @@
 			</timeCoverage>
 		</metadata>
 		<dataset name="MWBM" ID="mows.usgs.gov/pnwb/" serviceName="Services" urlPath="nwb_pub/">
-			<netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2" location="mows-data-00/data/publicmwb/CONUS_byHRU.ncml">
+			<netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2" location="mows-data-00/data/publicmwb/CONUS_bySEG.ncml">
 				<!-- Global Attributes for Dataset Discovery -->
 				<attribute name="Metadata_Conventions" type="String" value="Unidata Dataset Discovery v1.0"/>
 				<attribute name="Conventions" type="String" value="CF-1.6"/>
@@ -85,14 +85,6 @@
 					<attribute name="long_name" type="String" value="Actual Evapotranspiration"/>
 				<attribute name="coordinates" type="String" value="time"/>
 				</variable>	
-				<variable name="hru_area">
-					<attribute name="units" type="String" value="square kilometers"/>
-					<attribute name="long_name" type="String" value="HRU area"/>
-				</variable>
-				<variable name="HRU_id">
-					<attribute name="long_name" type="String" value="hydrologic response unit id"/>
-					<attribute name="standard_name" type="String" value="station_id"/>
-				</variable>	
 				<variable name="lat">
 					<attribute name="units" type="String" value="degrees_north"/>
 					<attribute name="long_name" type="String" value="Latitude"/>
@@ -113,9 +105,13 @@
 					<attribute name="long_name" type="String" value="Monthly Precipitation"/>
 					<attribute name="coordinates" type="String" value="time"/>
 				</variable>
-				<variable name="RO">
+				<variable name="SEG_id">
+					<attribute name="long_name" type="String" value="segment id"/>
+					<attribute name="standard_name" type="String" value="station_id"/>
+				</variable>	
+				<variable name="STRM">
 					<attribute name="units" type="String" value="millimeters"/>
-					<attribute name="long_name" type="String" value="Runoff"/>
+					<attribute name="long_name" type="String" value="Streamflow"/>
 					<attribute name="coordinates" type="String" value="time"/>
 				</variable>	
 				<variable name="SOIL">
@@ -127,16 +123,12 @@
 					<attribute name="units" type="String" value="millimeters"/>
 					<attribute name="long_name" type="String" value="Snow Water Equivalent"/>
 					<attribute name="coordinates" type="String" value="time"/>
-				</variable>
-				<variable name="SMSC">
-					<attribute name="units" type="String" value="millimeters"/>
-					<attribute name="long_name" type="String" value="Soil Moisture Storage Capacity"/>
 				</variable>	
 				<variable name="TAVE">
 					<attribute name="units" type="String" value="degrees Celsius"/>
 					<attribute name="long_name" type="String" value="Mean Monthly Temperature"/>
 					<attribute name="coordinates" type="String" value="time"/>
-				</variable>
+				</variable>	
 				<variable name="time">
 					<attribute name="units" type="integer" value="days since 1970-01-01 00:00:00"/>
 					<attribute name="standard_name" type="String" value="time"/>
