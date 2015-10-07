@@ -3,13 +3,6 @@
 	<attribute name="title" type="String" value="Monthly Water Balance Model CONUS"/>
 	<remove name="file_name" type="attribute"/>
 	<aggregation type="union">
-        <netcdf location=GSD_AET-byHRU.ncml enhance='true'/>
-        <netcdf location=GSD_PET-byHRUncml enhance='true'/>
-        <netcdf location=GSD_PPT-byHRU.ncml enhance='true'/>
-        <netcdf location=GSD_RO-byHRU.ncml enhance='true'/>
-        <netcdf location=GSD_SOIL-byHRU.ncml enhance='true'/>
-        <netcdf location=GSD_SWE-byHRU.ncml enhance='true'/>
-        <netcdf location=GSD_TAVE-byHRU.ncml enhance='true'/>
         <netcdf location=a1b-BCCR_BCM2_0_1_AET-byHRU.ncml enhance='true'/>
         <netcdf location=a1b-BCCR_BCM2_0_1_PET-byHRU.ncml enhance='true'/>
         <netcdf location=a1b-BCCR_BCM2_0_1_PPT-byHRU.ncml enhance='true'/>
@@ -1592,5 +1585,5 @@
         <netcdf location=rcp85-MIROC_ESM_R1_SOIL-byHRU.ncml enhance='true'/>
         <netcdf location=rcp85-MIROC_ESM_R1_SWE-byHRU.ncml enhance='true'/>
         <netcdf location=rcp85-MIROC_ESM_R1_TAVE-byHRU.ncml enhance='true'/>
-		</netcdf>
 	</aggregation>
+</netcdf>

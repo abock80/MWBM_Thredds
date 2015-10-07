@@ -83,7 +83,7 @@
 				<variable name="AET">
 					<attribute name="units" type="String" value="millimeters"/>
 					<attribute name="long_name" type="String" value="Actual Evapotranspiration"/>
-				<attribute name="coordinates" type="String" value="time"/>
+					<attribute name="coordinates" type="String" value="time"/>
 				</variable>	
 				<variable name="lat">
 					<attribute name="units" type="String" value="degrees_north"/>

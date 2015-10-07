@@ -6,8 +6,8 @@ def varWriter (xLines,climateDS,var,DSdim,region):
     xmlLines_copy[2]=xmlLines_copy[2].replace("VAR",var)
     xmlLines_copy[2]=xmlLines_copy[2].replace("DSname",climateDS+"_"+var)
     xmlLines_copy[2]=xmlLines_copy[2].replace("DSdim",DSdim)
-    xmlLines_copy[6]=xmlLines_copy[6].replace("DSname",climateDS)
-    xmlLines_copy[2]=xmlLines_copy[6].replace("DSdim",DSdim)
+    xmlLines_copy[4]=xmlLines_copy[4].replace("DSname",climateDS)
+    xmlLines_copy[4]=xmlLines_copy[4].replace("DSdim",DSdim)
     newfile.writelines(xmlLines_copy)
     newfile.close()
     del xmlLines_copy

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
-</netcdf>
+    <variable orgName="TAVE" name="a2-MPI_ECHAM5_2_TAVE.byHRU" />
     <aggregation type="joinExisting" dimName="time">
-        <scan location="public_mwb" regExp="something to find DSname.DSdim files in each region subdirectory"/>
+        <scan location="public_mwb" regExp="something to find a2-MPI_ECHAM5_2.byHRU files in each region subdirectory"/>
     </aggregation>
 </netcdf>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
-</netcdf>
+    <variable orgName="AET" name="b1-MRI_CGCM2_3_2A_2_AET.byHRU" />
     <aggregation type="joinExisting" dimName="time">
-        <scan location="public_mwb" regExp="something to find DSname.DSdim files in each region subdirectory"/>
+        <scan location="public_mwb" regExp="something to find b1-MRI_CGCM2_3_2A_2.byHRU files in each region subdirectory"/>
     </aggregation>
 </netcdf>

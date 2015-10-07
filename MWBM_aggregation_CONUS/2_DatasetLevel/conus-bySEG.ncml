@@ -1592,5 +1592,5 @@
         <netcdf location=rcp85-MIROC_ESM_R1_SOIL-bySEG.ncml enhance='true'/>
         <netcdf location=rcp85-MIROC_ESM_R1_SWE-bySEG.ncml enhance='true'/>
         <netcdf location=rcp85-MIROC_ESM_R1_TAVE-bySEG.ncml enhance='true'/>
-		</netcdf>
 	</aggregation>
+</netcdf>

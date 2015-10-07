@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" name="CIDA THREDDS Server.">
+	<service name="Services" serviceType="Compound" base="">
+		<service name="ncdods" serviceType="OpenDAP" base="/thredds/dodsC/"/>
+		<!--<service name="HTTPServer" serviceType="HTTPServer" base="/thredds/fileServer/"/>-->
+		<service name="wcs" serviceType="WCS" base="/thredds/wcs/"/>
+		<!--service name="wms" serviceType="WMS" base="/thredds/wms/"/-->
+		<service name="ncss" serviceType="NetcdfSubset" base="/thredds/ncss/grid/"/>
+		<service name="ncml" serviceType="NCML" base="/thredds/ncml/"/>
+		<service name="uddc" serviceType="UDDC" base="/thredds/uddc/"/>
+		<service name="iso" serviceType="ISO" base="/thredds/iso/"/>
+	</service>
+	<dataset name="Monthly Water Balance Model Hydrology Futures for the conterminous United States" ID="publicmwb">
+		<metadata inherited="true">
+			<dataType>station</dataType>
+			<dataFormat>NcML</dataFormat>
+			<documentation type="Rights">Freely Available.</documentation>
+			<documentation type="Summary">This archive contains monthly water balance hydrology futures for hydrologic region.</documentation>
+			<documentation type="Reference">"McCabe, G.J., and Markstrom, S.L., 2007, A monthly water-balance model driven by a graphical user interface: U.S. Geological Survey Open File Report 2007-1088, 6 p"</documentation>
+			<documentation type="Reference">"Bock, A.R., Hay, L.E., McCabe, G.J., Markstrom, S.L., and Atkinson, R.D., 2015, Parameter regionalization of a monthly water balance model for the conterminous United States: Hydrology and Earth System Sciences, doi:10.5194/hessd-12-10023-2015"</documentation>
+			<keyword>precipitation</keyword>
+			<keyword>hydrology</keyword>
+			<keyword>streamflow</keyword>
+			<keyword>water cycle</keyword>
+			<keyword>United States</keyword>
+			<creator>
+				<name>Andrew Bock</name>
+				<contact email="abock@usgs.gov"/>
+			</creator>
+			<publisher>
+				<name>U.S. Geological Survey Office of Water Information</name>
+			</publisher>
+			<geospatialCoverage>
+				<northsouth>
+					<start>25.0</start>
+					<size>24.4</size>
+					<units>degrees_north</units>
+				</northsouth>
+				<eastwest>
+					<start>-124.7</start>
+					<size>57.8</size>
+					<units>degrees_east</units>
+				</eastwest>
+			</geospatialCoverage>
+			<timeCoverage>
+				<start>1950-01-01T00:00</start>
+				<end>2099-12-31T00:00</end>
+				<resolution>1 Month</resolution>
+			</timeCoverage>
+		</metadata>
+		<dataset name="MWBM" ID="mows.usgs.gov/pnwb/" serviceName="Services" urlPath="nwb_pub/">
+			<netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2" location="mows-data-00/data/publicmwb/CONUS_byGAGE.ncml">
+				<!-- Global Attributes for Dataset Discovery -->
+				<attribute name="Metadata_Conventions" type="String" value="Unidata Dataset Discovery v1.0"/>
+				<attribute name="Conventions" type="String" value="CF-1.6"/>
+				<attribute name="featureType" type="String" value="timeSeries"/>
+				<attribute name="standard_name_vocabulary" type="String" value="CF-1.6"/>
+				<<attribute name="naming_authority" type="String" value="http://wwwbrr.cr.usgs.gov/projects/SW_MoWS/"/>
+				<attribute name="cdm_data_type" type="String" value="Station"/>
+				<attribute name="date_created" type="String" value="2014-10-01"/>
+				<attribute name="creator_name" type="String" value="Andrew Bock"/>
+				<attribute name="creator_email" type="String" value="abock@usgs.gov"/>
+				<attribute name="publisher_name" type="String" value="Center for Integrated Data Analytics"/>
+				<attribute name="publisher_url" type="String" value="http://www.cida.usgs.gov/"/>
+				<attribute name="publisher_email" type="String" value="cida@usgs.gov"/>
+				<attribute name="institution" type="String" value="United States Geological Survey"/>
+				<attribute name="nc_source" type="String" value="U.S. Geological Survey, National Water Information System"/>
+				<attribute name="reference" type="String" value="U.S. Geological Survey, 2104, A National Water Information System, available at: http://waterdata.usgs.gov/nwis/ (last access 27 March 2014)"/>
+				<attribute name="date_issued" type="String" value="2015-10-01"/>
+				<attribute name="project" type="String" value="Monthly Water Balance Model Hydrology Futures"/>
+				<attribute name="processing_level" type="String" value=""/>
+				<attribute name="acknowledgement" type="String" value=""/>
+				<attribute name="missing_value" value="-999.0"/>
+				<attribute name="contributors" type="String" value="Dave Blodgett, Lauren Hay, Steve Markstrom"/>
+				<attribute name="geospatial_lat_min" type="String" value=""/>
+				<attribute name="geospatial_lat_max" type="String" value=""/>
+				<attribute name="geospatial_lon_min" type="String" value=""/>
+				<attribute name="geospatial_lon_max" type="String" value=""/>
+				<attribute name="time_coverage_start" type="String" value="1950-01-01T00:00"/>
+				<attribute name="time_coverage_end" type="String" value="2010-12-31T00:00"/>
+				<attribute name="time_coverage_resolution" type="String" value="Monthly"/>
+				<attribute name="license" type="String" value="Freely available"/>
+				<variable name="DAR">
+					<attribute name="units" type="String" value="millimeters"/>
+					<attribute name="long_name" type="String" value="Drainage Area Ratio"/>
+				</variable>	
+				<variable name="Elev">
+					<attribute name="units" type="String" value="meters"/>
+					<attribute name="long_name" type="String" value="Elevation"/>
+				</variable>	
+				<variable name="GF_DA">
+					<attribute name="units" type="String" value="square kilometers"/>
+					<attribute name="long_name" type="String" value="Geospatial Fabric drainage area"/>
+				</variable>	
+				<variable name="lat">
+					<attribute name="units" type="String" value="degrees_north"/>
+					<attribute name="long_name" type="String" value="Latitude"/>
+					<attribute name="standard name" type="String" value="Latitude"/>
+				</variable>	
+				<variable name="lon">
+					<attribute name="units" type="String" value="degrees_east"/>
+					<attribute name="long_name" type="String" value="Longitude"/>
+					<attribute name="standard name" type="String" value="Longitude"/>
+				</variable>	
+				<variable name="NWIS_DA">
+					<attribute name="units" type="String" value="square kilometers"/>
+					<attribute name="long_name" type="String" value="NWIS drainage area"/>
+				</variable>
+				<variable name="Q">
+					<attribute name="units" type="String" value="millimeters"/>
+					<attribute name="long_name" type="String" value="Streamflow (measured)"/>
+					<attribute name="coordinates" type="String" value="time"/>
+				</variable>		
+				<variable name="SegID">
+					<attribute name="long_name" type="String" value="Segment ID"/>
+				</variable>					
+				<variable name="stations">
+					<attribute name="long_name" type="String" value="National Water Information System id"/>
+					<attribute name="coordinates" type="String" value="station_id"/>
+				</variable>
+				<variable name="station_longnames">
+					<attribute name="long_name" type="String" value="Station Name"/>
+					<attribute name="standard_name" type="String" value="station_name"/>
+				</variable>	
+				<variable name="time">
+					<attribute name="units" type="integer" value="days since 1970-01-01 00:00:00"/>
+					<attribute name="standard_name" type="String" value="time"/>
+				</variable>
+			</netcdf>
+		</dataset>
+	</dataset>
+</catalog>
