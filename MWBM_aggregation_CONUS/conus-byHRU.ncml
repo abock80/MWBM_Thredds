@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+	<attribute name="title" type="String" value="Monthly Water Balance Model CONUS"/>
+	<remove name="file_name" type="attribute"/>
+	<aggregation type="union">
+		<netcdf location="a1b-BCCR_BCM2_0_1-PPT-byHRU.ncml" enhance="true"/>
+		</netcdf>
+	</aggregation>
+</netcdf>
