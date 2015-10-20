@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+    <variable orgName="AET" name="b1-GFDL_CM2_1_1_AET.bySEG" />
+	<variable orgName="PET" name="b1-GFDL_CM2_1_1_PET.bySEG" />
+	<variable orgName="PPT" name="b1-GFDL_CM2_1_1_PPT.bySEG" />
+	<variable orgName="STRM" name="b1-GFDL_CM2_1_1_STRM.bySEG" />
+	<variable orgName="SOIL" name="b1-GFDL_CM2_1_1_SOIL.bySEG" />
+	<variable orgName="SWE" name="b1-GFDL_CM2_1_1_SWE.bySEG" />
+	<variable orgName="TAVE" name="b1-GFDL_CM2_1_1_TAVE.bySEG" />
+    <aggregation type="joinExisting" dimName="seg_id_dim">
+		<scan location="F://Yeti/ncdf_scripts/" suffix="b1-GFDL_CM2_1_1-bySEG.nc" />
+	</aggregation>
+</netcdf>

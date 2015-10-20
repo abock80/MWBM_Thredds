@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+    <variable orgName="AET" name="rcp60-MIROC_ESM_CHEM_R1_AET.byHRU" />
+	<variable orgName="PET" name="rcp60-MIROC_ESM_CHEM_R1_PET.byHRU" />
+	<variable orgName="PPT" name="rcp60-MIROC_ESM_CHEM_R1_PPT.byHRU" />
+	<variable orgName="RO" name="rcp60-MIROC_ESM_CHEM_R1_RO.byHRU" />
+	<variable orgName="SOIL" name="rcp60-MIROC_ESM_CHEM_R1_SOIL.byHRU" />
+	<variable orgName="SWE" name="rcp60-MIROC_ESM_CHEM_R1_SWE.byHRU" />
+	<variable orgName="TAVE" name="rcp60-MIROC_ESM_CHEM_R1_TAVE.byHRU" />
+    <aggregation type="joinExisting" dimName="hru_id_dim">
+		<scan location="F://Yeti/ncdf_scripts/" suffix="rcp60-MIROC_ESM_CHEM_R1-byHRU.nc" />
+	</aggregation>
+</netcdf>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+    <variable orgName="AET" name="a1b-CCCMA_CGCM3_1_5_AET.byHRU" />
+	<variable orgName="PET" name="a1b-CCCMA_CGCM3_1_5_PET.byHRU" />
+	<variable orgName="PPT" name="a1b-CCCMA_CGCM3_1_5_PPT.byHRU" />
+	<variable orgName="RO" name="a1b-CCCMA_CGCM3_1_5_RO.byHRU" />
+	<variable orgName="SOIL" name="a1b-CCCMA_CGCM3_1_5_SOIL.byHRU" />
+	<variable orgName="SWE" name="a1b-CCCMA_CGCM3_1_5_SWE.byHRU" />
+	<variable orgName="TAVE" name="a1b-CCCMA_CGCM3_1_5_TAVE.byHRU" />
+    <aggregation type="joinExisting" dimName="hru_id_dim">
+		<scan location="F://Yeti/ncdf_scripts/" suffix="a1b-CCCMA_CGCM3_1_5-byHRU.nc" />
+	</aggregation>
+</netcdf>
