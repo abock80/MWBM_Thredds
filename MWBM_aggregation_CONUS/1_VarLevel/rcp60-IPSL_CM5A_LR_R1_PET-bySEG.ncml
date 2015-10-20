@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
-    <variable orgName="PET" name="rcp60-IPSL_CM5A_LR_R1_PET.bySEG" />
-    <aggregation type="joinExisting" dimName="time">
-        <scan location="public_mwb" regExp="something to find rcp60-IPSL_CM5A_LR_R1.bySEG files in each region subdirectory"/>
-    </aggregation>
-</netcdf>

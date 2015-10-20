@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
-    <variable orgName="SOIL" name="a2-MIUB_ECHO_G_3_SOIL.byHRU" />
-    <aggregation type="joinExisting" dimName="time">
-        <scan location="public_mwb" regExp="something to find a2-MIUB_ECHO_G_3.byHRU files in each region subdirectory"/>
-    </aggregation>
-</netcdf>

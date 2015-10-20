@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
-    <variable orgName="SWE" name="b1-BCCR_BCM2_0_1_SWE.byHRU" />
-    <aggregation type="joinExisting" dimName="time">
-        <scan location="public_mwb" regExp="something to find b1-BCCR_BCM2_0_1.byHRU files in each region subdirectory"/>
-    </aggregation>
-</netcdf>

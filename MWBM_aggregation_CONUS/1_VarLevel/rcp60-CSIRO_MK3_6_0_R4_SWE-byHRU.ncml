@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
-    <variable orgName="SWE" name="rcp60-CSIRO_MK3_6_0_R4_SWE.byHRU" />
-    <aggregation type="joinExisting" dimName="time">
-        <scan location="public_mwb" regExp="something to find rcp60-CSIRO_MK3_6_0_R4.byHRU files in each region subdirectory"/>
-    </aggregation>
-</netcdf>

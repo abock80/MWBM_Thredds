@@ -82,8 +82,7 @@
 				<attribute name="license" type="String" value="Freely available"/>
 				<variable name="AET">
 					<attribute name="units" type="String" value="millimeters"/>
-					<attribute name="long_name" type="String" value="Actual Evapotranspiration"/>
-					<attribute name="coordinates" type="String" value="time"/>
+					<attribute name="coordinates" type="String" value="time lat lon"/>
 				</variable>	
 				<variable name="lat">
 					<attribute name="units" type="String" value="degrees_north"/>
@@ -97,13 +96,11 @@
 				</variable>	
 				<variable name="PET">
 					<attribute name="units" type="String" value="millimeters"/>
-					<attribute name="long_name" type="String" value="Potential Evapotranspiration"/>
-					<attribute name="coordinates" type="String" value="time"/>
+					<attribute name="coordinates" type="String" value="time lat lon"/>
 				</variable>	
 				<variable name="PPT">
 					<attribute name="units" type="String" value="millimeters"/>
-					<attribute name="long_name" type="String" value="Monthly Precipitation"/>
-					<attribute name="coordinates" type="String" value="time"/>
+					<attribute name="coordinates" type="String" value="time lat lon"/>
 				</variable>
 				<variable name="SEG_id">
 					<attribute name="long_name" type="String" value="segment id"/>
@@ -111,23 +108,19 @@
 				</variable>	
 				<variable name="STRM">
 					<attribute name="units" type="String" value="millimeters"/>
-					<attribute name="long_name" type="String" value="Streamflow"/>
-					<attribute name="coordinates" type="String" value="time"/>
+					<attribute name="coordinates" type="String" value="time lat lon"/>
 				</variable>	
 				<variable name="SOIL">
 					<attribute name="units" type="String" value="millimeters"/>
-					<attribute name="long_name" type="String" value="Soil Moisture Storage"/>
-					<attribute name="coordinates" type="String" value="time"/>
+					<attribute name="coordinates" type="String" value="time lat lon"/>
 				</variable>	
 				<variable name="SWE">
 					<attribute name="units" type="String" value="millimeters"/>
-					<attribute name="long_name" type="String" value="Snow Water Equivalent"/>
-					<attribute name="coordinates" type="String" value="time"/>
+					<attribute name="coordinates" type="String" value="time lat lon"/>
 				</variable>	
 				<variable name="TAVE">
 					<attribute name="units" type="String" value="degrees Celsius"/>
-					<attribute name="long_name" type="String" value="Mean Monthly Temperature"/>
-					<attribute name="coordinates" type="String" value="time"/>
+					<attribute name="coordinates" type="String" value="time lat lon"/>
 				</variable>	
 				<variable name="time">
 					<attribute name="units" type="integer" value="days since 1970-01-01 00:00:00"/>

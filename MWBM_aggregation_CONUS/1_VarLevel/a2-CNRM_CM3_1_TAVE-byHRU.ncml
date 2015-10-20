@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
-    <variable orgName="TAVE" name="a2-CNRM_CM3_1_TAVE.byHRU" />
-    <aggregation type="joinExisting" dimName="time">
-        <scan location="public_mwb" regExp="something to find a2-CNRM_CM3_1.byHRU files in each region subdirectory"/>
-    </aggregation>
-</netcdf>

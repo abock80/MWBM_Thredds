@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
-    <variable orgName="SOIL" name="b1-NCAR_CCSM3_0_7_SOIL.bySEG" />
-    <aggregation type="joinExisting" dimName="time">
-        <scan location="public_mwb" regExp="something to find b1-NCAR_CCSM3_0_7.bySEG files in each region subdirectory"/>
-    </aggregation>
-</netcdf>
