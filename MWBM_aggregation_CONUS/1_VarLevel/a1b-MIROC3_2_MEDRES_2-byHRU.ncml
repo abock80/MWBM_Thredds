@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
-    <variable orgName="AET" name="a1b-MIROC3_2_MEDRES_2_AET.byHRU" />
-	<variable orgName="PET" name="a1b-MIROC3_2_MEDRES_2_PET.byHRU" />
-	<variable orgName="PPT" name="a1b-MIROC3_2_MEDRES_2_PPT.byHRU" />
-	<variable orgName="RO" name="a1b-MIROC3_2_MEDRES_2_RO.byHRU" />
-	<variable orgName="SOIL" name="a1b-MIROC3_2_MEDRES_2_SOIL.byHRU" />
-	<variable orgName="SWE" name="a1b-MIROC3_2_MEDRES_2_SWE.byHRU" />
-	<variable orgName="TAVE" name="a1b-MIROC3_2_MEDRES_2_TAVE.byHRU" />
+    <variable orgName="AET" name="a1b-MIROC3_2_MEDRES_2_AET.byHRU" >
+		<attribute name="coordinates" value="lat lon" />
+	</variable>
+	<variable orgName="PET" name="a1b-MIROC3_2_MEDRES_2_PET.byHRU" >
+		<attribute name="coordinates" value="lat lon" />
+	</variable>
+	<variable orgName="PPT" name="a1b-MIROC3_2_MEDRES_2_PPT.byHRU" >
+		<attribute name="coordinates" value="lat lon" />
+	</variable>
+	<variable orgName="RO" name="a1b-MIROC3_2_MEDRES_2_RO.byHRU" >
+		<attribute name="coordinates" value="lat lon" />
+	</variable>
+	<variable orgName="SOIL" name="a1b-MIROC3_2_MEDRES_2_SOIL.byHRU" >
+		<attribute name="coordinates" value="lat lon" />
+	</variable>
+	<variable orgName="SWE" name="a1b-MIROC3_2_MEDRES_2_SWE.byHRU" >
+		<attribute name="coordinates" value="lat lon" />
+	</variable>
+	<variable orgName="TAVE" name="a1b-MIROC3_2_MEDRES_2_TAVE.byHRU" >
+		<attribute name="coordinates" value="lat lon" />
+	</variable>
     <aggregation type="joinExisting" dimName="hru_id_dim">
 		<scan location="F://Yeti/ncdf_scripts/" suffix="a1b-MIROC3_2_MEDRES_2-byHRU.nc" />
 	</aggregation>

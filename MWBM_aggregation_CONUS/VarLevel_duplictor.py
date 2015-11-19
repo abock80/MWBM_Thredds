@@ -5,20 +5,20 @@ def varWriter (xLines,climateDS,DSdim,region):
     xmlLines_copy=list(xLines)
     xmlLines_copy[2]=xmlLines_copy[2].replace("DSname",climateDS)
     xmlLines_copy[2]=xmlLines_copy[2].replace("DSdim",DSdim)
-    xmlLines_copy[3]=xmlLines_copy[3].replace("DSname",climateDS)
-    xmlLines_copy[3]=xmlLines_copy[3].replace("DSdim",DSdim)
-    xmlLines_copy[4]=xmlLines_copy[4].replace("DSname",climateDS)
-    xmlLines_copy[4]=xmlLines_copy[4].replace("DSdim",DSdim)
     xmlLines_copy[5]=xmlLines_copy[5].replace("DSname",climateDS)
     xmlLines_copy[5]=xmlLines_copy[5].replace("DSdim",DSdim)
-    xmlLines_copy[6]=xmlLines_copy[6].replace("DSname",climateDS)
-    xmlLines_copy[6]=xmlLines_copy[6].replace("DSdim",DSdim)
-    xmlLines_copy[7]=xmlLines_copy[7].replace("DSname",climateDS)
-    xmlLines_copy[7]=xmlLines_copy[7].replace("DSdim",DSdim)
     xmlLines_copy[8]=xmlLines_copy[8].replace("DSname",climateDS)
     xmlLines_copy[8]=xmlLines_copy[8].replace("DSdim",DSdim)
-    xmlLines_copy[10]=xmlLines_copy[10].replace("DSname",climateDS)
-    xmlLines_copy[10]=xmlLines_copy[10].replace("DSdim",DSdim)
+    xmlLines_copy[11]=xmlLines_copy[11].replace("DSname",climateDS)
+    xmlLines_copy[11]=xmlLines_copy[11].replace("DSdim",DSdim)
+    xmlLines_copy[14]=xmlLines_copy[14].replace("DSname",climateDS)
+    xmlLines_copy[14]=xmlLines_copy[14].replace("DSdim",DSdim)
+    xmlLines_copy[17]=xmlLines_copy[17].replace("DSname",climateDS)
+    xmlLines_copy[17]=xmlLines_copy[17].replace("DSdim",DSdim)
+    xmlLines_copy[20]=xmlLines_copy[20].replace("DSname",climateDS)
+    xmlLines_copy[20]=xmlLines_copy[20].replace("DSdim",DSdim)
+    xmlLines_copy[24]=xmlLines_copy[24].replace("DSname",climateDS)
+    xmlLines_copy[24]=xmlLines_copy[24].replace("DSdim",DSdim)
     newfile.writelines(xmlLines_copy)
     newfile.close()
     del xmlLines_copy
@@ -28,7 +28,7 @@ from os.path import isfile, join
 
 region="r01"
 varList=["AET","PET","PPT","RO","SOIL","SWE","TAVE"]
-dim="bySEG"
+dim="byHRU"
 
 #1 create/read-in necessary files
 template="D:/abock/Water_Balance/MetaData/MWBM_Thredds/MWBM_aggregation_CONUS/VarLevelTemp_"+dim+".ncml"
